@@ -9,3 +9,6 @@ run:
 
 clean:
 	rm -f lex.yy.c $(EXEC)
+
+parser:
+	gcc parser/top_down_parser/parser.c parser/top_down_parser/stack.c -o parser_exec
